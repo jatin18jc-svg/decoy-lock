@@ -1,0 +1,6 @@
+build.noindex/
+dist/
+samples/
+.claude/
+__pycache__/
+.DS_Store

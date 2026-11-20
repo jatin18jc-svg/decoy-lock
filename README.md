@@ -30,19 +30,6 @@ That builds a universal app (Apple silicon and Intel), signs it ad hoc, copies i
 
 A copy built on your own Mac opens without warnings.
 
-## Sharing with a friend
-
-```bash
-./package.sh
-```
-
-That builds `dist/Decoy-Lock-1.0.dmg` (about 1 MB). Send it any way you like: AirDrop, Google Drive, a USB stick. Inside are the app, a shortcut to Applications and a "Read Me First" note. Your friend needs macOS 14 or later, on either an Apple silicon or an Intel Mac.
-
-Because the app isn't notarized by Apple, the first launch on their Mac is blocked with a warning. They open **System Settings > Privacy & Security**, scroll down, click **Open Anyway** next to the Decoy Lock message, and confirm. That's needed once. The note in the disk image walks them through it.
-
-Removing that step for good means signing with a Developer ID and notarizing, which needs a paid Apple Developer account ($99 a year).
-
-Your friend sets up their own pair. Files you lock open on their Mac only with your passwords, and the reverse.
 
 ## First run
 
